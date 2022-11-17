@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Banner() {
     return (
-        <div className="relative h-[300px] sm:h-[400px] lg:h-[] xl:h-[] " >
+        <div className="relative h-[300px] sm:h-[400px]" >
             <Image className='' src="https://links.papareact.com/0fm" layout='fill' objectFit='cover' alt="" />
             <div className='absolute top-1/2 w-full text-center' >
                 <p>Not sure where to go? Perfect.</p>
