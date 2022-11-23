@@ -30,13 +30,13 @@ function Search({searchResults}) {
                         <p className="button">Rooms and Beds</p>
                         <p className="button">More Filters</p>
                     </div>
-                    <div className="flex flex-col" >
+                    <div className="flex flex-col !w-[70%]" >
                         {searchResults?.map(({img, location, title, description, star, price, total}, index) => (
-                            <InfoCard key={index} img={img} location={location} title={title} desc={description} star={star} price={price} total={total} />
+                            <InfoCard key={index} img={img} location={location} title={title} desc={description} star={star} price={price} total={total} index={index} />
                         ))}
                     </div>
                 </section>
-                <section className="hidden xl:inline-flex xl:w-[600px]" >
+                <section className="hidden xl:inline-flex xl:w-[30%] xl:h-screen fixed right-0" >
                     <Maps searchResults={searchResults} />
                 </section>
             </main>

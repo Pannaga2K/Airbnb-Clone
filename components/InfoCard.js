@@ -1,10 +1,14 @@
 import Image from "next/image";
 import {HeartIcon} from "@heroicons/react/outline";
 import {StarIcon} from "@heroicons/react/solid";
+import { useRouter } from "next/router";
 
-function InfoCard({img, location, title, desc, star, price, total}) {
+function InfoCard({img, location, title, desc, star, price, total, index}) {
+
+    const router = useRouter();
+
     return (
-        <div className="flex py-7 px-2 rounded-md cursor-pointer hover:opacity-80 hover:bg-[#1f1f1f] pr-4 transition duration-200 ease-out" >
+        <div className="flex py-7 px-2 rounded-md cursor-pointer hover:opacity-80 hover:bg-[#1f1f1f] pr-4 transition duration-200 ease-out" id={`infoCard__index${index}`} onClick={() => router.push(`/stay/${index}`)} >
             <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0" >
                 <Image className="rounded-2xl" src={img} layout="fill" objectFit="cover" alt="" />
             </div>
