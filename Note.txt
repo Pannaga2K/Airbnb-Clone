@@ -1,0 +1,8 @@
+pk.eyJ1IjoicGFubngiLCJhIjoiY2xhcWV1ZmJ3MWo1dzNwbzJrZHVuMmx3aiJ9.ST98xJZp_NzhCiJXNv9OPw
+
+
+STYLE URL
+mapbox://styles/pannx/claqgcdb7004i14o6tzwst8oy
+
+ACCESS TOKEN
+pk.eyJ1IjoicGFubngiLCJhIjoiY2xhcWV1ZmJ3MWo1dzNwbzJrZHVuMmx3aiJ9.ST98xJZp_NzhCiJXNv9OPw

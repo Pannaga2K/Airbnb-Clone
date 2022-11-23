@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .button {
+        @apply px-3 py-2 border bg-[#2f2f2f] rounded-full cursor-pointer hover:shadow-lg active:scale-95 transition transform duration-100 ease-out;
+    }
+}
+
 .rdrDateRangePickerWrapper, .rdrDateDisplayWrapper, .rdrCalendarWrapper, .rdrStaticRange, .rdrDefinedRangesWrapper, .rdrDayDisabled {
     color: white !important;
     background-color: #1f1f1f !important;
@@ -60,4 +66,31 @@
 .rdrInputRangeInput {
     color: black;
     background-color: #FD5B61;
+}
+
+.mapboxgl-popup {
+    background-color: transparent !important;
+    margin-top: -20px;
+}
+
+.mapboxgl-popup-anchor-bottom > .mapboxgl-popup-tip {
+    border-top-color: #0f0f0f !important;
+}
+
+.mapboxgl-popup-anchor-right > .mapboxgl-popup-tip  {
+    border-left-color: #0f0f0f !important;
+
+}
+
+.mapboxgl-popup-anchor-left > .mapboxgl-popup-tip  {
+    border-right-color: #0f0f0f !important;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip  {
+    border-bottom-color: #0f0f0f !important;
+}
+
+.mapboxgl-popup-content {
+    background-color: #0f0f0f !important;
+    color: whitesmoke !important;
 }
